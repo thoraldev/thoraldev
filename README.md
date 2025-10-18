@@ -1,16 +1,126 @@
-## Hi there 👋
-
-<!--
-**thoraldev/thoraldev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+{
+  "version": "1.0.0",
+  "exportedAt": "2025-10-18T23:13:53.322Z",
+  "profile": {
+    "title": "thoraldev",
+    "subtitle": "A passionate developer from around the world",
+    "currentWork": "",
+    "currentLearn": "",
+    "collaborateOn": "",
+    "helpWith": "",
+    "ama": "",
+    "contact": "thoraldev@gmail.com",
+    "funFact": "",
+    "visitorsBadge": true,
+    "badgeStyle": "flat",
+    "badgeColor": "0e75b6",
+    "badgeLabel": "Profile views",
+    "githubProfileTrophy": true,
+    "githubStats": true,
+    "githubStatsOptions": {
+      "theme": "",
+      "titleColor": "",
+      "textColor": "",
+      "bgColor": "",
+      "hideBorder": false,
+      "cacheSeconds": null,
+      "locale": "en"
+    },
+    "topLanguages": true,
+    "topLanguagesOptions": {
+      "theme": "",
+      "titleColor": "",
+      "textColor": "",
+      "bgColor": "",
+      "hideBorder": false,
+      "cacheSeconds": null,
+      "locale": "en"
+    },
+    "streakStats": true,
+    "streakStatsOptions": {
+      "theme": ""
+    },
+    "devDynamicBlogs": false,
+    "mediumDynamicBlogs": false,
+    "rssDynamicBlogs": false
+  },
+  "links": {
+    "currentWork": "",
+    "collaborateOn": "",
+    "helpWith": "",
+    "portfolio": "https://www.thoraldev.github.io",
+    "blog": "",
+    "resume": ""
+  },
+  "social": {
+    "github": "thoraldev",
+    "dev": "",
+    "linkedin": "",
+    "codepen": "",
+    "stackoverflow": "",
+    "kaggle": "",
+    "codesandbox": "",
+    "fb": "",
+    "instagram": "",
+    "twitter": "thoraldev",
+    "dribbble": "",
+    "behance": "",
+    "medium": "",
+    "youtube": "",
+    "codechef": "",
+    "hackerrank": "",
+    "codeforces": "",
+    "leetcode": "",
+    "topcoder": "",
+    "hackerearth": "",
+    "geeks_for_geeks": "",
+    "discord": "",
+    "rssurl": "",
+    "twitterBadge": true
+  },
+  "support": {
+    "buyMeACoffee": ""
+  },
+  "skills": [
+    "anaconda",
+    "arduino",
+    "bash",
+    "blender",
+    "bootstrap",
+    "c",
+    "cplusplus",
+    "csharp",
+    "css3",
+    "cypress",
+    "dart",
+    "django",
+    "docker",
+    "dotnet",
+    "electron",
+    "figma",
+    "firebase",
+    "flutter",
+    "git",
+    "html5",
+    "javascript",
+    "jest",
+    "laravel",
+    "linux",
+    "mariadb",
+    "matlab",
+    "mongodb",
+    "mysql",
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "qt",
+    "react",
+    "reactnative",
+    "sculpin",
+    "seaborn",
+    "tailwind",
+    "typescript",
+    "vuejs",
+    "vuepress"
+  ]
+}
