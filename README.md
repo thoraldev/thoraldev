@@ -1,8 +1,4 @@
 # ¡Hola! 👋 Soy ThoralDev
-<p align="center">
-  <img src="https://github.com/thoraldev/thoraldev/blob/output/github-contribution-grid-snake.svg" alt="Snake animation">
-</p>
-
 <a href="https://github.com/thoraldev/github-profile-views-counter">
     <img src="https://komarev.com/ghpvc/?username=thoraldev&style=for-the-badge&color=blueviolet">
 </a>
@@ -149,4 +145,8 @@ Aquí están las tecnologías, lenguajes y herramientas con las que trabajo:
   <img src="https://nirzak-streak-stats.vercel.app/?user=thoraldev&theme=monokai&hide_border=false" alt="GitHub Streak">
   <br>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+</p>
+
+<p align="center">
+  <img src="https://github.com/thoraldev/thoraldev/blob/output/github-contribution-grid-snake.svg" alt="Snake animation">
 </p>
