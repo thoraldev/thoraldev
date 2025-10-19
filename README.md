@@ -12,6 +12,14 @@ Desarrollador autodidacta apasionado por transformar ideas en soluciones funcion
 
 <br>
 
+## 🌱 Actualmente Estoy...
+
+- 🔭 Trabajando en un **auto-actualizador para aplicaciones de Windows Forms**.
+- 🌱 Aprendiendo más sobre **Arquitectura Limpia (Clean Architecture) en .NET**.
+- 👯 Buscando colaborar en **proyectos de automatización de código abierto**.
+- 🤔 Buscando ayuda con **optimización de consultas en bases de datos complejas**.
+- 💬 Pregúntame sobre **C# y desarrollo de aplicaciones de escritorio**.
+  
 ## 🚀 Mi Stack Tecnológico
 
 Aquí están las tecnologías, lenguajes y herramientas con las que trabajo:
