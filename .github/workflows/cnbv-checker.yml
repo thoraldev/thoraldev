@@ -1,20 +1,24 @@
 name: Revisor Diario de la CNBV
 
 on:
+  # Disparador programado (sin cambios)
   schedule:
-    # Se ejecuta todos los días a las 12:00 PM UTC (6:00 AM en Cancún)
     - cron: '0 12 * * *'
+  
+  # Disparador manual con una nueva opción
   workflow_dispatch:
+    inputs:
+      send_test_email:
+        description: '✅ Marcar para enviar un correo de prueba ahora'
+        required: true
+        type: boolean
+        default: false
 
 jobs:
-  # TRABAJO 1: Ejecuta el script y revisa si hubo cambios
-  check-for-updates:
+  check-and-notify:
     runs-on: ubuntu-latest
-    # Le damos a este trabajo un ID para que el siguiente pueda leer su resultado
-    outputs:
-      headline: ${{ steps.read_file.outputs.headline }}
-      link: ${{ steps.read_file.outputs.link }}
     steps:
+      # --- PASOS DE CONFIGURACIÓN (SIN CAMBIOS) ---
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -26,32 +30,79 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
+      # --- EJECUCIÓN DEL SCRIPT (SIN CAMBIOS) ---
       - name: Run CNBV checker script
         run: python check_cnbv.py
 
-      # Paso clave: Revisa si el archivo 'last_headline.txt' ha cambiado
+      # --- LÓGICA DE NOTIFICACIÓN (MEJORADA) ---
+
+      # 1. Revisa si el script encontró cambios
       - name: Check for file changes
         id: check_changes
         run: |
           if [[ -n $(git status --porcelain last_headline.txt) ]]; then
-            echo "File changed, proceeding to email."
+            echo "File changed, proceeding to notification."
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "No changes detected."
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
-      # Si hubo cambios, lee el nuevo titular y enlace para el correo
+      # 2. Lee el nuevo titular y enlace si hubo cambios
       - name: Read new headline and link
         id: read_file
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           headline=$(head -n 1 last_headline.txt)
           link=$(tail -n 1 last_headline.txt)
-          echo "headline=$headline" >> $GITHUB_OUTPUT
-          echo "link=$link" >> $GITHUB_OUTPUT
+          echo "headline=${headline}" >> $GITHUB_OUTPUT
+          echo "link=${link}" >> $GITHUB_OUTPUT
 
-      # Si hubo cambios, guarda el archivo actualizado en el repositorio
+      # 3. Envía un correo de ACTUALIZACIÓN si hubo cambios
+      - name: Send Update Email Notification
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "🚨 Nueva Actualización de la CNBV Detectada"
+          to: ${{ secrets.MAIL_USERNAME }}
+          from: GitHub Actions Bot <${{ secrets.MAIL_USERNAME }}>
+          body: |
+            ¡Hola!
+            Se ha detectado una nueva actualización en la sección de prensa de la CNBV.
+
+            **Titular:** ${{ steps.read_file.outputs.headline }}
+
+            **Puedes leerla aquí:** ${{ steps.read_file.outputs.link }}
+
+            Este es un mensaje automático.
+
+      # 4. Envía un correo de PRUEBA si se activó manualmente
+      - name: Send Test Email Notification
+        if: github.event.inputs.send_test_email == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "✅ Correo de Prueba - Sistema de Notificación CNBV"
+          to: ${{ secrets.MAIL_USERNAME }}
+          from: GitHub Actions Bot <${{ secrets.MAIL_USERNAME }}>
+          body: |
+            ¡Hola!
+
+            Este es un correo de prueba para confirmar que el sistema de notificaciones por correo está funcionando correctamente.
+
+            Tus credenciales y la configuración son correctas. El bot está listo para vigilar la página de la CNBV por ti.
+
+            Saludos,
+            GitHub Actions Bot
+
+      # 5. Guarda los cambios en el repositorio si hubo una actualización real
       - name: Commit and push if changed
         if: steps.check_changes.outputs.changed == 'true'
         run: |
@@ -60,34 +111,3 @@ jobs:
           git add last_headline.txt
           git commit -m "📝 Actualiza último titular de la CNBV"
           git push
-
-  # TRABAJO 2: Envía el correo electrónico (SOLO SI HUBO CAMBIOS)
-  send-email:
-    # Este trabajo depende de que el anterior termine
-    needs: check-for-updates
-    # Condición: Solo se ejecuta si el trabajo anterior detectó un cambio
-    if: needs.check-for-updates.outputs.headline != ''
-    runs-on: ubuntu-latest
-    steps:
-      - name: Send email notification
-        uses: dawidd6/action-send-mail@v3
-        with:
-          # Configuración del servidor de correo (ejemplo para Gmail)
-          server_address: smtp.gmail.com
-          server_port: 465
-          # Credenciales seguras desde los Secrets
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          # Contenido del correo
-          subject: "🚨 Nueva Actualización de la CNBV Detectada"
-          to: ${{ secrets.MAIL_USERNAME }} # Se envía a tu propio correo
-          from: GitHub Actions Bot <${{ secrets.MAIL_USERNAME }}>
-          body: |
-            ¡Hola!
-            Se ha detectado una nueva actualización en la sección de prensa de la CNBV.
-
-            **Titular:** ${{ needs.check-for-updates.outputs.headline }}
-
-            **Puedes leerla aquí:** ${{ needs.check-for-updates.outputs.link }}
-
-            Este es un mensaje automático generado por tu GitHub Action.
