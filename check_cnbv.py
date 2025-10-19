@@ -7,17 +7,20 @@ MEMORY_FILE = "last_headline.txt"
 def get_latest_headline():
     """Visita la página de la CNBV y extrae el titular y el enlace del comunicado más reciente."""
     try:
-        page = requests.get(URL)
+        # AÑADIMOS ESTE ENCABEZADO PARA SIMULAR UN NAVEGADOR
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        
+        # AÑADIMOS 'headers=headers' A LA PETICIÓN
+        page = requests.get(URL, headers=headers)
+        
         page.raise_for_status()
         soup = BeautifulSoup(page.content, "html.parser")
         
-        # Encontramos el contenedor del artículo más reciente
         latest_article = soup.find("div", class_="col-md-8")
         if latest_article:
             headline_element = latest_article.find("h2").find("a")
             if headline_element:
                 headline = headline_element.text.strip()
-                # Construimos el enlace completo
                 link = f"https://www.gob.mx{headline_element['href']}"
                 return headline, link
     except requests.exceptions.RequestException as e:
@@ -41,7 +44,6 @@ def save_new_data(headline, link):
 if __name__ == "__main__":
     print("Iniciando revisión de la CNBV...")
     latest_headline, latest_link = get_latest_headline()
-    # Leemos solo la primera línea del archivo, que es el titular
     last_seen = get_last_seen_headline().split('\n')[0]
 
     if latest_headline and latest_headline != last_seen:
