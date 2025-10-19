@@ -1,19 +1,117 @@
-# Hi <a href="https://www.gautamkrishnar.com/"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm thoraldev
+# ¡Hola! 👋 Soy ThoralDev
 
-### A passionate developer from around the world
 <a href="https://github.com/thoraldev/github-profile-views-counter">
-    <img src="https://komarev.com/ghpvc/?username=thoraldev&style=for-the-badge">
+    <img src="https://komarev.com/ghpvc/?username=thoraldev&style=for-the-badge&color=blueviolet">
 </a>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=thoraldev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+Desarrollador autodidacta apasionado por transformar ideas en soluciones funcionales y eficientes. Me especializo en el desarrollo de aplicaciones de escritorio con **C#** y en la creación de **scripts de automatización**, buscando siempre optimizar procesos y crear herramientas útiles.
 
-<p align="left"> <a href="https://twitter.com/thoraldev" target="blank"><img src="https://img.shields.io/twitter/follow/thoraldev?logo=twitter&style=for-the-badge" alt="thoraldev" /></a> </p>
+- 👨‍💻 Todos mis proyectos están disponibles en mi **[Portafolio Web](https://www.thoraldev.github.io)**
+- 📫 Contáctame por correo en: **thoraldev@gmail.com**
+- 💬 Hablemos de tecnología, programación o cualquier idea innovadora.
 
-- 📫 How to reach me **thoraldev@gmail.com**
+<br>
 
-- 👨‍💻 All of my projects are available at **[https://www.thoraldev.github.io](https://www.thoraldev.github.io)**
+## 🚀 Mi Stack Tecnológico
 
+Aquí están las tecnologías, lenguajes y herramientas con las que trabajo:
+
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="#-backend">
+        <img src="https://skillicons.dev/icons?i=cs" width="48" height="48" alt="C#" /><br>
+        <b>Backend</b>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="#-frontend">
+        <img src="https://skillicons.dev/icons?i=html,css,js" width="48" height="48" alt="Frontend" /><br>
+        <b>Frontend</b>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="#-bases-de-datos">
+        <img src="https://skillicons.dev/icons?i=mysql,postgres" width="48" height="48" alt="Bases de Datos" /><br>
+        <b>Bases de Datos</b>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="#-mobile">
+        <img src="https://skillicons.dev/icons?i=flutter,dart" width="48" height="48" alt="Mobile" /><br>
+        <b>Mobile</b>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="#-herramientas-y-devops">
+        <img src="https://skillicons.dev/icons?i=git,docker,linux" width="48" height="48" alt="Herramientas" /><br>
+        <b>Herramientas</b>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary>Haz clic para ver la lista completa de tecnologías</summary>
+
+### 💻 Backend
+<p>
+  <img src="https://skillicons.dev/icons?i=cs" alt="C#" title="C#" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" title=".NET" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=django" alt="Django" title="Django" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" title="Laravel" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=c" alt="C" title="C" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=cpp" alt="C++" title="C++" height="40"/>&nbsp;
+</p>
+
+### 🌐 Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=css" alt="CSS" title="CSS" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" title="TypeScript" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=vue" alt="Vue.js" title="Vue.js" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" title="Next.js" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" title="Bootstrap" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" title="Tailwind CSS" height="40"/>&nbsp;
+</p>
+
+### 🗃️ Bases de Datos
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" height="40"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MariaDB" title="MariaDB" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" title="PostgreSQL" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase" height="40"/>&nbsp;
+</p>
+
+### 📱 Mobile
+<p>
+  <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter" title="Flutter" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=dart" alt="Dart" title="Dart" height="40"/>&nbsp;
+</p>
+
+### 🛠️ Herramientas y DevOps
+<p>
+  <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=linux" alt="Linux" title="Linux" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=bash" alt="Bash" title="Bash" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=figma" alt="Figma" title="Figma" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=blender" alt="Blender" title="Blender" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=electron" alt="Electron" title="Electron" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=qt" alt="Qt" title="Qt" height="40"/>&nbsp;
+  <img src="https://skillicons.dev/icons?i=arduino" alt="Arduino" title="Arduino" height="40"/>&nbsp;
+</p>
+</details>
+
+<br>
+
+## ✨ Mi Arte en Código
 ```
   ____                  ____                      
  / __ \___  ___ ___    / __/__  __ _____________  
@@ -25,16 +123,19 @@
 /___/|___/\__/_/  \_, /\__/_//_/_/_//_/\_, (_|_|_)
                  /___/                /___/       
 ```
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://github.com/thoraldev" target="black"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="thoraldev" height="30" width="40" /></a>
-<a href="https://twitter.com/thoraldev" target="black"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="thoraldev" height="30" width="40" /></a>
+
+<br>
+
+## 🏆 Mis Trofeos y Estadísticas en GitHub
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=thoraldev&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="Trophies">
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/anaconda" target="blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=anaconda" alt="anaconda" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/arduino" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=arduino" alt="arduino" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/bash" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=bash" alt="bash" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/blender" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=blender" alt="blender" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/bootstrap" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/c" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=c" alt="c" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/cplusplus" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=cpp" alt="cplusplus" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/csharp" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=cs" alt="csharp" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/css3" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=css" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/cypress" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=cypress" alt="cypress" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/dart" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=dart" alt="dart" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/django" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=django" alt="django" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/docker" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=docker" alt="docker" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/dotnet" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=dotnet" alt="dotnet" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/electron" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=electron" alt="electron" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/figma" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=figma" alt="figma" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/firebase" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=firebase" alt="firebase" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/flutter" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=flutter" alt="flutter" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/git" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=git" alt="git" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/html5" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=html" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=js" alt="javascript" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/jest" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=jest" alt="jest" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/laravel" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=laravel" alt="laravel" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/linux" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=linux" alt="linux" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/mariadb" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/matlab" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=matlab" alt="matlab" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/mongodb" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/mysql" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=mysql" alt="mysql" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/nextjs" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=nextjs" alt="nextjs" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/nodejs" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/postgresql" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=postgres" alt="postgresql" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/qt" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=qt" alt="qt" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/react" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=react" alt="react" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/reactnative" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=react" alt="reactnative" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/sculpin" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="sculpin" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/seaborn" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/tailwind" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=tailwind" alt="tailwind" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/typescript" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=ts" alt="typescript" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/vuejs" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=vue" alt="vuejs" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/vuepress" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="vuepress" width="40" height="40"/> </a></p>
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=thoraldev&theme=monokai&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub Stats">
+  <br>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=thoraldev&theme=monokai&hide_border=false" alt="GitHub Streak">
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+</p>
