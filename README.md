@@ -1,4 +1,7 @@
 # ¡Hola! 👋 Soy ThoralDev
+<p align="center">
+  <img src="https://github.com/thoraldev/thoraldev/blob/output/github-contribution-grid-snake.svg" alt="Snake animation">
+</p>
 
 <a href="https://github.com/thoraldev/github-profile-views-counter">
     <img src="https://komarev.com/ghpvc/?username=thoraldev&style=for-the-badge&color=blueviolet">
