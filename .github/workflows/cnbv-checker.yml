@@ -1,0 +1,93 @@
+name: Revisor Diario de la CNBV
+
+on:
+  schedule:
+    # Se ejecuta todos los días a las 12:00 PM UTC (6:00 AM en Cancún)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  # TRABAJO 1: Ejecuta el script y revisa si hubo cambios
+  check-for-updates:
+    runs-on: ubuntu-latest
+    # Le damos a este trabajo un ID para que el siguiente pueda leer su resultado
+    outputs:
+      headline: ${{ steps.read_file.outputs.headline }}
+      link: ${{ steps.read_file.outputs.link }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run CNBV checker script
+        run: python check_cnbv.py
+
+      # Paso clave: Revisa si el archivo 'last_headline.txt' ha cambiado
+      - name: Check for file changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain last_headline.txt) ]]; then
+            echo "File changed, proceeding to email."
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes detected."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Si hubo cambios, lee el nuevo titular y enlace para el correo
+      - name: Read new headline and link
+        id: read_file
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          headline=$(head -n 1 last_headline.txt)
+          link=$(tail -n 1 last_headline.txt)
+          echo "headline=$headline" >> $GITHUB_OUTPUT
+          echo "link=$link" >> $GITHUB_OUTPUT
+
+      # Si hubo cambios, guarda el archivo actualizado en el repositorio
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add last_headline.txt
+          git commit -m "📝 Actualiza último titular de la CNBV"
+          git push
+
+  # TRABAJO 2: Envía el correo electrónico (SOLO SI HUBO CAMBIOS)
+  send-email:
+    # Este trabajo depende de que el anterior termine
+    needs: check-for-updates
+    # Condición: Solo se ejecuta si el trabajo anterior detectó un cambio
+    if: needs.check-for-updates.outputs.headline != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # Configuración del servidor de correo (ejemplo para Gmail)
+          server_address: smtp.gmail.com
+          server_port: 465
+          # Credenciales seguras desde los Secrets
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          # Contenido del correo
+          subject: "🚨 Nueva Actualización de la CNBV Detectada"
+          to: ${{ secrets.MAIL_USERNAME }} # Se envía a tu propio correo
+          from: GitHub Actions Bot <${{ secrets.MAIL_USERNAME }}>
+          body: |
+            ¡Hola!
+            Se ha detectado una nueva actualización en la sección de prensa de la CNBV.
+
+            **Titular:** ${{ needs.check-for-updates.outputs.headline }}
+
+            **Puedes leerla aquí:** ${{ needs.check-for-updates.outputs.link }}
+
+            Este es un mensaje automático generado por tu GitHub Action.
