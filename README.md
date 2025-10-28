@@ -119,7 +119,7 @@ Aquí están las tecnologías, lenguajes y herramientas con las que trabajo:
 <br>
 
 ## ✨ Mi Arte en Código
-```
+```python
   ____                  ____                      
  / __ \___  ___ ___    / __/__  __ _____________  
 / /_/ / _ \/ -_) _ \  _\ \/ _ \/ // / __/ __/ -_) 
