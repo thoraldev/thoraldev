@@ -131,6 +131,23 @@ Aquí están las tecnologías, lenguajes y herramientas con las que trabajo:
 /___/|___/\__/_/  \_, /\__/_//_/_/_//_/\_, (_|_|_)
                  /___/                /___/       
 ```
+```bash
+#!/bin/bash
+
+cat > fake.log << EOF
+[INFO] 2025-11-01 10:30:01 - User 'admin' logged in.
+[WARNING] 2025-11-01 10:32:15 - Low disk space.
+[ERROR] 2025-11-01 10:33:00 - Database connection FAILED.
+[WARNING] 2025-11-01 10:36:00 - Failed login attempt for 'root'.
+EOF
+
+echo "--- 🔍 Analizando 'fake.log' ---"
+
+cat fake.log | grep --color=auto -i -E "WARNING|ERROR|FAILED"
+
+echo "--- ✅ Análisis completado ---"
+rm fake.log
+```
 
 <br>
 
@@ -140,14 +157,11 @@ Aquí están las tecnologías, lenguajes y herramientas con las que trabajo:
   <img src="https://github-profile-trophy.vercel.app/?username=thoraldev&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="Trophies">
 </p>
 
-<p align="center">
+<p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub Stats">
-  <br>
-  <img src="https://nirzak-streak-stats.vercel.app/?user=thoraldev&theme=monokai&hide_border=false" alt="GitHub Streak">
-  <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+    <img src="https://nirzak-streak-stats.vercel.app/?user=thoraldev&theme=monokai&hide_border=false" alt="GitHub Streak">
 </p>
 
-<p align="center">
-  <img src="https://github.com/thoraldev/thoraldev/blob/output/github-contribution-grid-snake.svg" alt="Snake animation">
+  <p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
 </p>
