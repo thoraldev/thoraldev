@@ -1,4 +1,4 @@
-![Banner](https://github.com/thoraldev/thoraldev/blob/main/github-header-banner_git.png)
+![Banner](https://github.com/thoraldev/thoraldev/blob/main/github-header-banner_git.png](https://github.com/thoraldev/thoraldev/blob/main/github-header-banner.png)
 # ¡Hola! 👋 Soy ThoralDev 🎃
 <a href="https://github.com/thoraldev/github-profile-views-counter">
     <img src="https://komarev.com/ghpvc/?username=thoraldev&style=for-the-badge&color=blueviolet">
