@@ -1,5 +1,6 @@
 # ¡Hola! 👋 Soy ThoralDev 🎃
 <a href="https://github.com/thoraldev/github-profile-views-counter">
+    <img src="https://i.imgur.com/Wskj8cn.jpeg">
     <img src="https://komarev.com/ghpvc/?username=thoraldev&style=for-the-badge&color=blueviolet">
 </a>
 
