@@ -6,7 +6,7 @@
 
 Desarrollador autodidacta apasionado por transformar ideas en soluciones funcionales y eficientes. Me especializo en el desarrollo de aplicaciones de escritorio con **C#** y en la creación de **scripts de automatización**, buscando siempre optimizar procesos y crear herramientas útiles.
 
-- 👨‍💻 Todos mis proyectos están disponibles en mi **[Portafolio Web](https://www.thoraldev.github.io)**
+- 👨‍💻 Todos mis proyectos están disponibles en mi **[Portafolio Web](https://thoraldev.github.io/)**
 - 📫 Contáctame por correo en: **thoraldev@gmail.com**
 - 💬 Hablemos de tecnología, programación o cualquier idea innovadora.
 
