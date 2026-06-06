@@ -152,16 +152,3 @@ rm fake.log
 <br>
 
 ## 🏆 Mis Trofeos y Estadísticas en GitHub
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=thoraldev&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="Trophies">
-</p>
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub Stats">
-    <img src="https://nirzak-streak-stats.vercel.app/?user=thoraldev&theme=monokai&hide_border=false" alt="GitHub Streak">
-</p>
-
-  <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thoraldev&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
-</p>
